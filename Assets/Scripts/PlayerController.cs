@@ -67,7 +67,8 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && groundChecker.isGrounded)
         {
 
-            rb.AddForce(new Vector2(0, jumpForce));
+            //rb.AddForce(new Vector2(0, jumpForce));
+            rb.AddForce(Vector2.up * jumpForce);
 
 
         }
